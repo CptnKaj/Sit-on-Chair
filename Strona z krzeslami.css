@@ -658,7 +658,7 @@ input:nth-of-type(3){
 
 .image_part img{
     margin-top: 110px;
-    margin-left: 38px;
+    /* margin-left: 38px; */
 }
   
 .summary_panel {
@@ -692,7 +692,7 @@ input:nth-of-type(3){
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
-    height: 135px;
+    height: 145px;
 }
   
 .panel_right {
@@ -703,24 +703,25 @@ input:nth-of-type(3){
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
-    height: 135px;
+    height: 145px;
 }
   
 .panel_left h4 , .panel_right h4{
     color: #24baa0;
-    font-size: 23px;
+    font-size: 22px;
+    margin: 0;
 }
   
 .panel_left span{
     margin-top:10px;
-    font-size: 22px;
+    font-size: 18px;
     color: #5b5a5a;
     display: block;
 }
   
 .panel_right span {
     display: block;
-    font-size: 22px;
+    font-size: 18px;
     color: #24baa0;
     margin-top:10px;
 }
@@ -742,7 +743,7 @@ input:nth-of-type(3){
     color: #24baa0;
 }
   
-  .list_arrow {
+.list_arrow {
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
@@ -774,10 +775,17 @@ input:nth-of-type(3){
     color: #585858;
 }
 
-.list_arrow:hover .list_panel {
+/* .list_arrow:hover .list_panel {
     display: block;
+} */
+
+.title {
+    height: 30px;
 }
 
-  .title {
-    height: 30px;
-  }
+#pickedChair {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

@@ -45,9 +45,9 @@
                     </div>                  
                     <div class="form">
                         <div class="drop_down_list">
-                            <span class="list_label">Wybierz rodzaj</span>
+                            <span class="list_label" id="kindOfChairInput">Wybierz rodzaj</span>
                             <div class="list_arrow">
-                            <ul class="list_panel">
+                            <ul class="list_panel" id='kindOfChair'>
                                 <li>Clair</li>
                                 <li>Margarita</li>
                                 <li>Selena</li>
@@ -55,9 +55,9 @@
                             </div>
                         </div>
                         <div class="drop_down_list">
-                            <span class="list_label">Wybierz kolor</span>
+                            <span class="list_label" id="colorOfChairInput">Wybierz kolor</span>
                             <div class="list_arrow">
-                                <ul class="list_panel">
+                                <ul class="list_panel" id='colorOfChair'>
                                     <li>Czerwony</li>
                                     <li>Czarny</li>
                                     <li>Pomarańczowy</li>
@@ -65,9 +65,9 @@
                             </div>
                         </div>
                         <div class="drop_down_list">
-                            <span class="list_label">Wybierz materiał</span>
+                            <span class="list_label" id="fabricOfChairInput">Wybierz materiał</span>
                             <div class="list_arrow">
-                                <ul class="list_panel">
+                                <ul class="list_panel" id='fabricOfChair'>
                                     <li>Tkanina</li>
                                     <li>Skóra</li>
                                 </ul>
@@ -82,7 +82,7 @@
                     </div>
                 </section> 
                 <section class="image_part inline">
-                    <img src="images/red_chair.png">
+                    <img src="images/red_chair.png" id="pickedChair">
                 </section>    
                 <section class="summary_part inline">
                     <div class="align_right">
@@ -91,18 +91,20 @@
                     <div class="summary_panel">
                                     <div class="panel_left">
                                         <h4 class="title">Twój fotel</h4>
-                                        <span class="color"></span>
-                                        <span class="pattern"></span>
-                                        <span class="transport"></span>
+                                        <span class="kind" id='moneyKind'></span>
+                                        <span class="color" id='moneyColor'></span>
+                                        <span class="pattern" id='moneyFabric'></span>
+                                        <span class="transport" id='moneyTransport'></span>
                                     </div>
                                     <div class="panel_right">
                                         <h4 class="title value"></h4>
-                                        <span class="color value"></span>
-                                        <span class="pattern value"></span>
-                                        <span class="transport value"></span>
+                                        <span class="kind value" id='valueKind'></span>
+                                        <span class="color value" id='valueColor'></span>
+                                        <span class="pattern value" id='valueFabric'></span>
+                                        <span class="transport value" id='valueTransport'></span>
                                     </div>
                                     <div class="sum_label">SUMA</div>
-                                    <div class="sum"><strong></strong></div>
+                                    <div class="sum" id='sum'></div>
                     </div>
                     <a href="#" class="green_button">Zamawiam</a>
                 </section>
@@ -231,5 +233,7 @@
                 </nav>
             </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./strona z krzeslami.js"></script>
 </body>
 </html>
