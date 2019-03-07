@@ -231,3 +231,13 @@
 .title {
   height: 30px;
 }
+
+.image_part {
+  display: flex;
+  justify-content: center;
+  align-items:center;	
+}
+
+#pickedChair {
+  height: 250px;
+}

@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
     box-sizing: border-box;
+    max-width: 1024px;
 }
 
 header{
@@ -119,8 +120,9 @@ h1 {
 }
 
 .margins {
-    margin: 20px 115px;
+    margin: 20px 20px;
 }
+
 .threeSquares {
     display: flex;
     justify-content: space-between;
@@ -165,6 +167,7 @@ h1 {
 .square2 {
     position: relative;
     width: 329px;
+    margin: 0 10px;
 }
 
 .square3 {
@@ -238,6 +241,7 @@ h2 {
 
 .costs__options1 {
     width: 30%;
+    margin: 0 10px;
     border: 1px solid lightseagreen;
     text-align: center;
     background-color: lightseagreen;

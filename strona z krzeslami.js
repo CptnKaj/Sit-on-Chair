@@ -43,7 +43,6 @@ $square2.on('mouseout', function() {
 
 const $smallGreenArrow = $('.list_arrow');
 
-
 $smallGreenArrow.on('click', function(){
     $(this).children().toggle();
 })
@@ -120,13 +119,15 @@ const $transport = $('.chair__checkbox label');
 $('#moneyTransport').hide();
 $('#valueTransport').hide();
 $transport.on('click', function(){
-    // $('#sum').html(Number($('#sum').html()) - Number($('#valueTransport').html()*2));
-    console.log($('.chair__checkbox label::before, .chair__checkbox label::after').hide());
-    console.log($('#valueTransport').html());
-    $('#moneyTransport').text('+ Transport').toggle();
-    $('#valueTransport').text('85.99').toggle();
-    console.log($('#valueTransport').html());
-    $('#sum').html(Number($('#sum').html()) + Number($('#valueTransport').html())).toggle();
-    console.log($('#sum').html())
+    console.log($('.chair__checkbox input')[0].checked);
+    if($('.chair__checkbox input')[0].checked == false){
+        $('#moneyTransport').text('+ Transport').toggle();
+        $('#valueTransport').text('85.99').toggle();
+        $('#sum').html(Number($('#sum').html()) + Number($('#valueTransport').html()));
+    } else {
+        $('#moneyTransport').text('+ Transport').toggle();
+        $('#valueTransport').text('85.99').toggle();
+        $('#sum').html(Number($('#sum').html()) - Number($('#valueTransport').html()));
+    }
 })
 })
